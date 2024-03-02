@@ -10,14 +10,14 @@ body{
 }
 .container{
     background-color: #eee;
-    margin: 0 3rem;
+    margin: 0 1rem;
 }
 header{
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: fixed;
-        z-index: 1000;
+        z-index: 100;
         padding: 1rem;
         width: 100%;
         background-color: indianred;
@@ -108,6 +108,7 @@ hr{
     background-color: #24285b;
     color: #fff;
     position: absolute;
+    z-index: 1000;
     width: 60%;
     height: 80%;
     top: -100%;
