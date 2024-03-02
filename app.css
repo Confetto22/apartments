@@ -6,6 +6,7 @@
 body{
     /* padding: 0 3rem ; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
     
 }
 .container{
@@ -112,7 +113,7 @@ hr{
     z-index: 1000;
     width: 60%;
     height: 80%;
-    top: -100%;
+    top: -200%;
     right: 0;
     left: 0;
     margin: auto;
@@ -191,8 +192,9 @@ hr{
 
 
 .section-1{
-    padding: 3rem 2rem;
-    padding-top: 10rem;
+    padding: 0 2rem;
+    padding-top: 17rem;
+    padding-bottom: 5rem;
 }
 .section-1 h1{
     color: #121643;
@@ -229,8 +231,9 @@ hr{
 }
 .hero-img{
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 8rem;
     transition: 0.3s ease;
+    margin-bottom: 5rem;
 }
 .hero-img:hover{
     scale: 1.07;
@@ -361,6 +364,7 @@ hr{
     width: 60%;
     align-items: center;
     gap: 1rem;
+    padding: 0 1rem;
     padding-bottom: 1.4rem ;
 }
 
@@ -435,10 +439,17 @@ hr{
     padding: 1rem 2rem;
     border-top: 1px solid #ddd;
     letter-spacing: 1px;
+    transition: 0.3s ease;
+        
 }
 .accordion__title{
     color: #121643;
     cursor: pointer;
+}
+.acc__head__transform{
+    background-color: #fff;
+    
+    
 }
 
 .active {
@@ -586,4 +597,80 @@ footer{
     transform: rotate(15deg);
 
     /* box-shadow: 1px 0px 11px 6px rgb(203, 224, 63); */
+}
+
+
+
+
+@media only screen and (min-width:800px){
+    /* body{
+    display: none;
+    } */
+
+    .desktop-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+
+    }
+    .desktop-menu li{
+        list-style-type: none;
+    }
+    .desktop-menu li a{
+        text-decoration: none;
+        color: #9df4fac5;
+        padding: 0.6rem 1rem;
+        border-radius: 0.2rem;
+        transition: 0.3s ease;
+    } 
+    .desktop-menu li a:hover{
+        background-color: #24285b;
+        
+    }
+
+
+    .testimonial-tiles{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        padding: 0 3rem;
+    }
+
+    .section-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        
+        
+    }
+    .tile{
+        border: 1px solid rgba(126, 124, 124, 0.164);
+        padding: 2rem;
+    }
+    .hero-img{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 8rem;
+    }
+
+    .section-3{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .section3-img{
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+}
+
+
+
+@media only screen and (min-width:900px) {
+    .section-2{
+        display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+    }
 }
