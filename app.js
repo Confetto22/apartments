@@ -38,6 +38,8 @@ closeMenuEl.addEventListener("click", () => {
 
 
 const accordionItemsEl = document.getElementsByClassName("accordion__item");
+const accordionTitleText = document.querySelectorAll("accordion__title")
+
 
 function main() {
   for (let item of accordionItemsEl) {
@@ -53,8 +55,20 @@ function main() {
           
         accDetails.style.maxHeight = accDetails.scrollHeight + "px";
       }
+
+      accHeader.classList.toggle("acc__head__transform")
     })
   }
+  
+
+  accordionTitleText.forEach((head) => {
+    head.style.color = "red";
+  })
 }
 
 main();
+
+
+
+
+
